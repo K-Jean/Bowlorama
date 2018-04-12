@@ -2,4 +2,11 @@
 
 # Bowlorama
 
-Bowling world
+Bowling world 
+
+# Contact
+
+Groupe C - APP4 INFO - Polytech Paris Sud
+
+Arthur YEN : arthur.yen@u-psud.fr
+Kévin JEAN : kevin.jean@u-psud.fr

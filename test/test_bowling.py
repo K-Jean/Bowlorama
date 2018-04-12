@@ -1,6 +1,6 @@
 import pytest
 
-from bowlorama.main import function_somme_tupe
+from bowling.main import function_somme_tupe
 
 
 def test_tuple():

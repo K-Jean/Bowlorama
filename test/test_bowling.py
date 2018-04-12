@@ -1,6 +1,6 @@
 import unittest
 
-from source.main import function_somme_tupe
+from bowlorama.main import function_somme_tupe
 
 
 class Test(unittest.TestCase):

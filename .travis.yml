@@ -1,7 +1,7 @@
 language: python
 notifications:
   email: false
-  slack: polytechbowling:wZFQdCpaI5kyNStxsN8sI2F9
+  slack: polinfo:y7iNVl10k7YTrw3EQc9NRY7H
 install:
   - pip install codecov
   - pip install pytest pytest-cov

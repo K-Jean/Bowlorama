@@ -1,5 +1,6 @@
 language: python
 notifications:
+  email: false
   slack: polytechbowling:wZFQdCpaI5kyNStxsN8sI2F9
 install:
   - pip install codecov

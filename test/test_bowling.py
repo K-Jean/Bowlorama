@@ -108,6 +108,30 @@ def test_ajout_Joueur_score_grand2():
     with pytest.raises(TypeError):
         j1 = Joueur("Kevin",[(1,1),(4,3),(1,1),(4,3),(1,1),(4,3),(1,1),(4,3),(10,0),(10,0),(4,0),(4,0),(4,0)])
 
+def test_ajout_score_grand():
+    with pytest.raises(TypeError):
+        j1 = Joueur("Patrick")
+        j1.changer_tableau_score(
+            [(10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0),
+             (10, 0)])
+        j1.ajouter_score_manche((10,0))
+
+def test_ajout_score_error():
+    with pytest.raises(TypeError):
+        j1 = Joueur("Patrick")
+        j1.changer_tableau_score(
+            [(10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0),
+             (5, 0)])
+        j1.ajouter_score_manche((10,0))
+
+def test_ajout_score_error2():
+    with pytest.raises(TypeError):
+        j1 = Joueur("Patrick")
+        j1.changer_tableau_score(
+            [(10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0), (10, 0),
+             (10, 0)])
+        j1.ajouter_score_manche((5,5))
+
 #def test_nb_tuple_sup_douze():
 #    with pytest.raises(TypeError):
 #        function_somme_tupe(

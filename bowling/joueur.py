@@ -9,7 +9,7 @@ class Joueur:
         if len(self.tableau_score) == 12:
             raise TypeError("tab > 12")
         if len(self.tableau_score) == 11 :
-            if self.tableau_score[9][0] != 10 and self.tableau_score[10][0] != 10:
+            if self.tableau_score[9][0] != 10 or self.tableau_score[10][0] != 10:
                 raise TypeError("tab>11")
             if tuple[1]!=0:
                 raise TypeError("input error")
@@ -31,10 +31,10 @@ class Joueur:
         return
 
     def calculer_score(self):
-        if len(self.tableau_score) > 12:
-            raise TypeError("tab > 12")
-        if len(self.tableau_score) > 11 and (self.tableau_score[9][0] != 10 or  self.tableau_score[10][0] != 10):
-            raise TypeError("tab > 10")
+        #if len(self.tableau_score) > 12:
+        #    raise TypeError("tab > 12")
+        #if len(self.tableau_score) > 11 and (self.tableau_score[9][0] != 10 or  self.tableau_score[10][0] != 10):
+        #    raise TypeError("tab > 10")
         sum = 0
         multiplicateur1 = 1
         multiplicateur2 = 1
@@ -42,8 +42,8 @@ class Joueur:
         nb_tour = 0
         for (x, y) in self.tableau_score:
             nb_tour += 1
-            if x < 0 or y < 0 or x + y > 10:
-                raise TypeError("value error")
+        #    if x < 0 or y < 0 or x + y > 10:
+        #        raise TypeError("value error")
 
             sum += multiplicateur1 * x + multiplicateur2 * y
 

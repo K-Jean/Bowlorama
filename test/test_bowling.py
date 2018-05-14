@@ -1,6 +1,5 @@
 import pytest
 
-from bowling.main import function_somme_tupe
 from bowling.joueur import Joueur
 
 
@@ -54,7 +53,7 @@ def test_chain_strike_2():
     j1.ajouter_score_manche((10, 0))
     j1.ajouter_score_manche((2, 0))
     assert j1.calculer_score() == 66
-    assert function_somme_tupe([(10, 0), (10, 0), (10, 0), (2, 0)]) == 66
+#    assert function_somme_tupe([(10, 0), (10, 0), (10, 0), (2, 0)]) == 66
 
 
 def test_full_strike():
